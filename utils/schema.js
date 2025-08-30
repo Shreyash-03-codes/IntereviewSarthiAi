@@ -1,5 +1,5 @@
-import { serial, text, varchar } from "drizzle-orm/pg-core";
-import { pgTable } from "drizzle-orm/pg-core";
+import { pgTable, serial, text, varchar, timestamp } from "drizzle-orm/pg-core";
+
 
 // MockInterview table
 export const MockInterview = pgTable("mockinterview", {
@@ -47,4 +47,16 @@ export const Newsletter = pgTable("newsletter", {
   newEmail: varchar("newemail"),
   newMessage: text("newmessage"),
   createdAt: varchar("createdat")
+});
+
+
+export const DailyQuestion = pgTable("dailyquestion", {
+  id: serial("id").primaryKey(),
+  question: text("question").notNull(),
+  answer: text("answer").notNull(),
+  category: varchar("category"),
+  difficulty: varchar("difficulty"),
+  createdAt: timestamp("createdat").defaultNow().notNull(),
+  createdBy: varchar("createdby"),
+  questionDate: varchar("questiondate").notNull().unique(),
 });
