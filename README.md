@@ -37,7 +37,7 @@ To get started with the AI-Powered Mock Interview Platform, follow these steps:
 - Drizzle ORM: An ORM that makes database interactions simpler and more intuitive.
 
 ## Usage
-To use the AI-Powered Mock Interview Platform, follow these guidelines:
+To use the IntereviewSarthiAi Platform, follow these guidelines:
 - Create an Account: Sign up to start your mock interview sessions.
 - Choose Interview Type: Select the type of interview (e.g., technical, behavioral) and job role
 - Start Interview: Begin your mock interview and respond to the AI-generated questions.
